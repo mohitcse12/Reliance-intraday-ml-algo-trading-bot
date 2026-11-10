@@ -1,0 +1,7 @@
+fyers-apiv3
+lightgbm
+pandas
+numpy
+python-dotenv
+requests
+joblib
