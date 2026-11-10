@@ -35,13 +35,12 @@ An end-to-end, automated intraday algorithmic trading system engineered specific
 
 ## 📂 Repository Structure
 
-```text
 Reliance-intraday-ml-algo-trading-bot/
 ├── bot.py               # Main live trading execution, risk management & API engine
+├── model_training.py    # LightGBM model training, feature engineering & Optuna tuning
 ├── requirements.txt     # Required Python libraries and dependencies
 ├── .env.example         # Template for environment variables & secret API keys
 └── README.md            # Project documentation and setup guide
-```
 
 ## 🚀 Installation & Setup Guide
 
@@ -62,7 +61,13 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+### 3. Train the ML Model (Optional)
+If you have historical data and want to train the LightGBM model locally:
+```bash
+python model_training.py
+```
+
+### 4. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
